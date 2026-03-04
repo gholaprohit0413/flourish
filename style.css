@@ -13,17 +13,6 @@ font-family:'Poppins',sans-serif;
 scroll-behavior:smooth;
 }
 
-/* TOP BAR */
-.top-bar{
-background:#6a1b9a;
-color:white;
-display:flex;
-justify-content:flex-end;
-padding:8px 60px;
-font-size:14px;
-gap:30px;
-}
-
 /* HEADER */
 header{
 background:#7b1fa2;
