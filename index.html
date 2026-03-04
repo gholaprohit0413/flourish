@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flourish Beauty Parlour </title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="top-bar">
+    <p>📞 +91 8208903946</p>
+    <p>✉ flourish@123</p>
+</div>
+
+<header>
+    <div class="logo">Flourish Beauty Parlour</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-left">
+        <h4>Beautiful Face</h4>
+        <h1>Healthy <span>You</span></h1>
+        <p>Allow our team of beauty specialists to help you prepare for your wedding and enhance your special day.</p>
+        
+        <div class="hero-buttons">
+            <a href="#" class="btn1">Learn More</a>
+            <!-- Changed button to popup -->
+            <a href="#" onclick="openPopup()" class="btn2">Book Appointment</a>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="slider">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" class="active">
+            <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8">
+            <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4">
+        </div>
+    </div>
+</section>
+
+<section class="experience">
+    <div class="exp-left">
+        <h2>20+ Years<br>of Experience</h2>
+        <p>Passion, knowledge and beauty salon excellence continues to give the best services in the world.</p>
+        <a href="#" onclick="openPopup()" class="btn2">Appointment Now</a>
+    </div>
+
+    <div class="exp-right">
+        <div class="grid">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+            <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f">
+            <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4">
+            <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8">
+        </div>
+    </div>
+</section>
+
+<!-- POPUP FORM ADDED -->
+<div class="popup" id="popupForm">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Book Appointment</h2>
+
+        <form action="/book" method="POST">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <input type="date" name="date" required>
+
+    <select name="service" required>
+        <option value="">-- Select Service --</option>
+
+        <option>Adv Facial + D Tan + Bleach + Choco Hand Wax + Leg Wax + Eyebrow + Upperlip (1299)</option>
+
+        <option>Adv Facial + D Tan + Bleach + Rica Hand + Half Leg Wax + Eyebrow (1499)</option>
+
+        <option>Hair Wash + Haircut + Hair Spa (799)</option>
+
+        <option>Rica Hand Wax + Rica Leg Wax (599)</option>
+
+        <option>Fruit Cleanup + Choco Hand + Leg Wax + Eyebrow (499)</option>
+
+        <option>Haircut + Hair Wash + Root Touchup + Blow Dry (999)</option>
+
+        <option>Manicure + Pedicure (899)</option>
+
+        <option>Highlights Per Strips (700)</option>
+
+        <option>Hair Treatment (150)</option>
+
+        <option>Highlights / Balayage / Ombre (30% Off)</option>
+    </select>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Flourish Beauty Parlour | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

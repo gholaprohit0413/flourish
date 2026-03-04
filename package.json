@@ -1,0 +1,15 @@
+{
+  "name": "flourish-parlour",
+  "version": "1.0.0",
+  "description": "Flourish Beauty Parlour Booking Website",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.2.2",
+    "nodemailer": "^8.0.1",
+    "express-session": "^1.19.0"
+  }
+}
